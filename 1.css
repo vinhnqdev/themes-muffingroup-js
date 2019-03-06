@@ -17,6 +17,7 @@ body{
     text-align: center;
     position: absolute;
     bottom: 0;
+    z-index: 999;
 }
 
 ul.icon-bar {
@@ -24,19 +25,23 @@ ul.icon-bar {
 }
 
 ul.icon-bar li {
+    box-sizing: border-box;
     display: inline-block;
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
+    /*border: 2px solid black;*/
+    background: #636161e6;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    margin-left: 17px;
-    text-indent: -9999px;
+    margin-left: 5px;
+    /*text-indent: -9999px;*/
+
 }
 
 ul.icon-bar li:hover, ul.icon-bar li.active{
-	background: black;
+	border: 2px solid white;
 	cursor: pointer;
 }
+
 
 
 /*Xu li bo cuc*/
@@ -61,6 +66,9 @@ ul.slide-bar >li {
     position: absolute;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 2s;
 
 }
 ul.slide-bar >li > div.chuyentrang	 {
@@ -152,9 +160,25 @@ ul.slide-bar >li > div.chuyentrang	 {
     font-size: 7px;
     border-radius: 4px;
     display: inline-block;
-    width: 100px;
+    width: 90px;
+
+}
+.chuyentrang>.mottrang>.text>button:hover{
+    cursor: pointer;
+    background: green;
 }
 
+/*CSS of JS*/
+
+.display-slide{
+    opacity: 1!important;
+    visibility: visible!important;
+}
+
+.default-display{
+    opacity: 1!important;
+    visibility: visible!important;
+}
 
 
 
