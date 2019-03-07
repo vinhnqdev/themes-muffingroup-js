@@ -109,19 +109,7 @@ ul.slide-bar >li > div.chuyentrang	 {
 	position: absolute;
 	top: 0;
 }
-.chuyentrang>.mottrang>img.nautren{
-	right: -5%;
-	top: -25%;
-	opacity: 0.5;
-}
-.chuyentrang>.mottrang>img.nauduoi1{
-	top: -44%;
-	opacity: 0.4;
-}
-.chuyentrang>.mottrang>img.nauduoi2 {
-    top: -21%;
-    opacity: 0.6;
-}
+
 .chuyentrang>.mottrang>.text{
 	position: absolute;
 	top: 41%;
@@ -178,6 +166,46 @@ ul.slide-bar >li > div.chuyentrang	 {
 .default-display{
     opacity: 1!important;
     visibility: visible!important;
+    
+}
+
+.chuyentrang>.mottrang>img.nautren{
+    /*transition: 3s top, 3s right;*/
+    transition: 5s;
+    right: -5%;
+    top: -25%;
+    opacity: 0.5;
+    animation: defaulttop 0.8s;
+}
+
+
+.chuyentrang>.mottrang>img.nauduoi1{
+    
+    
+    animation: defaultbottom_lg 0.8s;
+    opacity: 0.4;
+     top: -44%;
+   
+}
+.chuyentrang>.mottrang>img.nauduoi2 {
+    animation-name: defaultbottom_sm;
+    animation-duration: 0.8s;
+    opacity: 0.6;
+}
+
+
+@keyframes defaulttop{
+    from{right: -10%;top: -30%}
+    to{right: -5%;top: -25%;}
+}
+
+@keyframes defaultbottom_lg{
+    from{left: -60%;}
+    to{left: 0%;}
+}
+@keyframes defaultbottom_sm{
+    from{left: -50%;}
+    to{left: 0%;top: 0%}
 }
 
 
