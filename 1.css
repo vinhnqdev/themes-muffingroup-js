@@ -174,27 +174,31 @@ ul.slide-bar >li > div.chuyentrang	 {
     transition: 5s;
     right: -5%;
     top: -25%;
-    opacity: 0.5;
-    animation: defaulttop 0.8s;
+   /* opacity: 0.5;
+    animation: defaulttop 0.8s;*/
 }
 
 
 .chuyentrang>.mottrang>img.nauduoi1{
     
     
-    animation: defaultbottom_lg 0.8s;
-    opacity: 0.4;
+   /* animation: defaultbottom_lg 0.8s;
+    opacity: 0.4;*/
      top: -44%;
    
 }
 .chuyentrang>.mottrang>img.nauduoi2 {
-    animation-name: defaultbottom_sm;
+    top: 0;
+    /*animation-name: defaultbottom_sm;
     animation-duration: 0.8s;
-    opacity: 0.6;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;*/
+    
 }
 
 
-@keyframes defaulttop{
+/*@keyframes defaulttop{
     from{right: -10%;top: -30%}
     to{right: -5%;top: -25%;}
 }
@@ -204,9 +208,9 @@ ul.slide-bar >li > div.chuyentrang	 {
     to{left: 0%;}
 }
 @keyframes defaultbottom_sm{
-    from{left: -50%;}
-    to{left: 0%;top: 0%}
+    from{left: -50%;opacity: 0.6;}
+    to{left: 0%;top: 0%;opacity: 0.6;}
 }
-
+*/
 
 
